@@ -1,0 +1,17 @@
+#question 8
+def productOfArray(arr):
+    product = 1
+    for num in arr:
+        product *= num
+    return product
+
+# Example 1
+arr = [1, 2, 3, 4, 5]
+print(productOfArray(arr))  # Output: 120
+
+# Example 2
+arr = [1, 6, 3]
+print(productOfArray(arr))  # Output: 18
+
+#TC - O(n)
+#SC - O(1)
