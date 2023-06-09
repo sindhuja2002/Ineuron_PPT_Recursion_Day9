@@ -1,0 +1,17 @@
+#question 3
+def factorial(N):
+    result = 1
+    for i in range(2, N + 1):
+        result *= i
+    return result
+
+# Example 1
+N = 5
+print(factorial(N))  # Output: 120
+
+# Example 2
+N = 4
+print(factorial(N))  # Output: 24
+
+#TC - O(N)------loop performing 2 to N
+#SC - O(1)
