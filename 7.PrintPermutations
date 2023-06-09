@@ -1,0 +1,28 @@
+#question 7
+from itertools import permutations
+
+def printPermutations(S):
+    permuts = permutations(S)
+    for perm in permuts:
+        print(''.join(perm))
+
+# Example 1
+S = "ABC"
+printPermutations(S)
+# Output:
+# ABC
+# ACB
+# BAC
+# BCA
+# CAB
+# CBA
+
+# Example 2
+S = "XY"
+printPermutations(S)
+# Output:
+# XY
+# YX
+
+#TC - O(n!)
+#SC - O(n!)
