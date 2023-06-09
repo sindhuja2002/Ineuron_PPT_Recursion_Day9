@@ -1,0 +1,21 @@
+#Question 1
+def isPowerOfTwo(n):
+    if n <= 0:
+        return False
+    return (n & (n - 1)) == 0
+
+# Example 1
+n = 1
+print(isPowerOfTwo(n))  # Output: True
+
+# Example 2
+n = 16
+print(isPowerOfTwo(n))  # Output: True
+
+# Example 3
+n = 3
+print(isPowerOfTwo(n))  # Output: False
+
+
+#TC - O(1)
+#SC - O(1)
