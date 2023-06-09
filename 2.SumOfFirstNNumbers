@@ -1,0 +1,14 @@
+#question 2
+def sumOfFirstNNumbers(n):
+    return (n * (n + 1)) // 2
+
+# Example 1
+n = 3
+print(sumOfFirstNNumbers(n))  # Output: 6
+
+# Example 2
+n = 5
+print(sumOfFirstNNumbers(n))  # Output: 15
+
+#TC - O(1)
+#SC - O(1)
