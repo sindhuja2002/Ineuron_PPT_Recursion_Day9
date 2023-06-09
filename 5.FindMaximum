@@ -1,0 +1,27 @@
+#question 5
+def findMax(arr, n):
+    # Base case: If the array has only one element, return it as the maximum
+    if n == 1:
+        return arr[0]
+    
+    # Recursive call to find the maximum of the subarray excluding the last element
+    max_element = findMax(arr, n - 1)
+    
+    # Compare the maximum with the last element of the array
+    if arr[n - 1] > max_element:
+        return arr[n - 1]
+    else:
+        return max_element
+
+# Example 1
+arr = [1, 4, 3, -5, -4, 8, 6]
+n = len(arr)
+print(findMax(arr, n))  # Output: 8
+
+# Example 2
+arr = [1, 4, 45, 6, 10, -8]
+n = len(arr)
+print(findMax(arr, n))  # Output: 45
+
+#TC - O(n)
+#SC - O(n)
