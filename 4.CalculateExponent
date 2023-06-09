@@ -1,0 +1,16 @@
+#question 4
+def calculateExponent(N, P):
+    return N ** P
+
+# Example 1
+N = 5
+P = 2
+print(calculateExponent(N, P))  # Output: 25
+
+# Example 2
+N = 2
+P = 5
+print(calculateExponent(N, P))  # Output: 32
+
+#TC - O(1)
+#SC - O(1)
